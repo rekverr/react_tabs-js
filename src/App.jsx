@@ -13,7 +13,7 @@ export const tabs = [
 export const App = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0].id);
 
-  const activityTab = tabs.find(tab => tab.id === selectedTab || tab[0]);
+  const activityTab = tabs.find(tab => tab.id === selectedTab);
 
   return (
     <div className="section">
